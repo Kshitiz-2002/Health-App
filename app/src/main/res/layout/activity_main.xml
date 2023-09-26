@@ -9,19 +9,21 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/_bg__android_large___1_ek2_shape">
+        android:background="@drawable/bg__android_large___1_ek2_shape">
 
         <View
             android:id="@+id/imgback"
             android:layout_width="319dp"
             android:layout_height="574dp"
+            android:layout_above="@+id/submitBox"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="40dp"
-            android:background="@drawable/rectangle_1_shape"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="40dp"/>
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="75dp"
+            android:background="@drawable/rectangle_1_shape" />
 
         <ImageView
             android:layout_width="245dp"
@@ -70,30 +72,33 @@
             android:id="@+id/submitBox"
             android:layout_width="305dp"
             android:layout_height="72dp"
-            android:layout_below="@+id/imgback"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="32dp"
-            android:background="@drawable/rectangle_3_shape"
-            android:layout_marginEnd="40dp">
-        </View>
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rectangle_3_shape"/>
 
         <TextView
             android:id="@+id/submit"
             android:layout_width="234.4dp"
             android:layout_height="25.4dp"
+            android:layout_alignTop="@+id/submitBox"
+            android:layout_alignBottom="@+id/submitBox"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_gravity="center_horizontal|center"
             android:layout_marginStart="70dp"
             android:layout_marginLeft="64dp"
-            android:layout_marginTop="645.5dp"
+            android:layout_marginTop="17dp"
             android:layout_marginEnd="70dp"
+            android:layout_marginBottom="21dp"
             android:gravity="center"
+            android:paddingBottom="0dp"
             android:text="Get Started"
-            android:textSize="24sp"
             android:textColor="@color/ellipse_1_color"
+            android:textSize="24sp"
             android:textStyle="bold" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
