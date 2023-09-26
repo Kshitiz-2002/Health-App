@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- android_large___1 colors -->
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="_bg__android_large___1_ek2_color">#E9EBF6</color>
+    <color name="ellipse_1_color">#FFFFFF</color>
+    <color name="rectangle_2_color">#D9D9D9</color>
+    <color name="rectangle_4_color">#D9D7D7</color>
+    <color name="rectangle_3_color">#4FC9BF</color>
+    <color name="rectangle_1_color">#FFF7F7</color>
+    <color name="take_care_your_health_color">#000000</color>
+    <color name="and_here_we_are_to_help_you_by_providing_best_services_color">#9A9A9A</color>
 </resources>

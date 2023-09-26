@@ -1,18 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Hello World!"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/_bg__android_large___1_ek2_shape">
+
+        <View
+            android:id="@+id/imgback"
+            android:layout_width="319dp"
+            android:layout_height="574dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/rectangle_1_shape"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"/>
+
+        <ImageView
+            android:layout_width="245dp"
+            android:layout_height="304dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="80dp"
+            android:contentDescription="famImg"
+            android:src="@drawable/jpeg_image_60dd96ac1ff2_1_1" />
+
+        <TextView
+            android:layout_width="251.4dp"
+            android:layout_height="56.4dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="80dp"
+            android:gravity="center"
+            android:text="Take Care of Your Health"
+            android:textColor="@color/take_care_your_health_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="272.4dp"
+            android:layout_height="92.4dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="452dp"
+            android:layout_marginEnd="80dp"
+            android:gravity="center"
+            android:text="and here we are to help you by providing best services"
+            android:textColor="@color/and_here_we_are_to_help_you_by_providing_best_services_color"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/submitBox"
+            android:layout_width="305dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/imgback"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rectangle_3_shape"
+            android:layout_marginEnd="40dp">
+        </View>
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="234.4dp"
+            android:layout_height="25.4dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="645.5dp"
+            android:layout_marginEnd="70dp"
+            android:gravity="center"
+            android:text="Get Started"
+            android:textSize="24sp"
+            android:textColor="@color/ellipse_1_color"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
