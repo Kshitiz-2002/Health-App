@@ -64,7 +64,7 @@
 <!--Nav-Bar-->
     <View
         android:id="@+id/navbar"
-        android:layout_width="360dp"
+        android:layout_width="410dp"
         android:layout_height="64dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
@@ -74,16 +74,98 @@
 
     <!--Home-->
         <!--Icon-->
-    <View
-        android:id="@+id/screenshot_"
+    <ImageView
+        android:id="@+id/homeicon"
         android:layout_width="39.78dp"
         android:layout_height="37dp"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@id/navbar"
+        android:layout_alignTop="@id/navbar"
+        android:layout_marginTop="2dp"
         android:layout_marginLeft="50.46dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="737dp"
         android:background="@drawable/homeicon"
         />
+        <!--Text-->
+    <TextView
+        android:id="@+id/hometext"
+        android:layout_width="25dp"
+        android:layout_height="9dp"
+        android:layout_alignLeft="@id/navbar"
+        android:layout_alignTop="@id/navbar"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="42dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/home"
+        android:textAppearance="@style/home" />
+    <!--Health-Data-->
+        <!--Icon-->
+    <ImageView
+        android:id="@+id/healthicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/navbar"
+        android:layout_alignTop="@id/navbar"
+        android:layout_marginLeft="126.15dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/healthicon" />
+        <!--Text-->
+    <TextView
+        android:id="@+id/healthtext"
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/navbar"
+        android:layout_alignTop="@id/navbar"
+        android:layout_marginLeft="129.06dp"
+        android:layout_marginTop="42dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/health_data"
+        android:textAppearance="@style/home" />
+    <!--Prescription-->
+        <!--Icon-->
+    <ImageView
+        android:id="@+id/prescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/navbar"
+        android:layout_alignTop="@id/navbar"
+        android:layout_marginLeft="208.63dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/prescription" />
+        <!--Text-->
+    <TextView
+        android:id="@+id/prescriptiontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/navbar"
+        android:layout_alignTop="@id/navbar"
+        android:layout_marginLeft="204.74dp"
+        android:layout_marginTop="42dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/prescription"
+        android:textAppearance="@style/home" />
+    <!--Doctor's Advice-->
+        <!--Icon-->
+    <ImageView
+        android:id="@+id/doctorsadvice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/navbar"
+        android:layout_alignTop="@id/navbar"
+        android:layout_marginLeft="294.99dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/doctorsadvice" />
+        <!--Text-->
+    <TextView
+        android:id="@+id/doctorsadvicetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/navbar"
+        android:layout_alignTop="@id/navbar"
+        android:layout_marginLeft="284.31dp"
+        android:layout_marginTop="42dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/prescription"
+        android:textAppearance="@style/home" />
+
 
 
 

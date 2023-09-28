@@ -3,4 +3,17 @@
     <string name="hello_aishw">
 \n\nHello,\n\n\n<b>Aishwarya chauhan</b>👋🏻
 </string>
+    <string name="home">
+Home
+</string>
+    <string name="health_data">
+Health \nData
+</string>
+    <string name="prescription">
+Prescription
+</string>
+    <string name="doctor_s_ad">
+Doctor\u00E2\u0080\u0099s advice
+</string>
+
 </resources>
