@@ -8,7 +8,8 @@
     android:clipToOutline="true"
     android:background="#F2F2F9">
 
-<!--Profile -->
+    <!--Profile -->
+    <!--Profile-Pic-->
     <View
         android:id="@+id/profile"
         android:layout_width="387dp"
@@ -18,14 +19,14 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="65dp" />
-    <!--Profile-Pic-->
+        android:layout_marginTop="32dp" />
+
     <View
         android:id="@+id/profilePic"
         android:layout_width="68.07dp"
         android:layout_height="72.04dp"
         android:layout_marginLeft="54dp"
-        android:layout_marginTop="73dp"
+        android:layout_alignTop="@id/profile"
         android:layout_alignStart="@+id/profile"
         android:layout_marginStart="0dp"
         android:background="@drawable/profilepic" />
@@ -34,16 +35,15 @@
         android:id="@+id/hello_aishw"
         android:layout_width="324.83dp"
         android:layout_height="135.77dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="150dp"
+        android:layout_alignStart="@+id/profile"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="115dp"
         android:gravity="top"
         android:lineSpacingExtra="-26sp"
         android:text="@string/hello_aishw"
         android:textAppearance="@style/hello_aishw" />
-<!--Search Bar-->
+    <!--Search Bar-->
+    <!--Nav-Bar-->
     <TextView
         android:id="@+id/searchbar"
         android:layout_width="307dp"
@@ -53,15 +53,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="15dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/searchbar"
         android:elevation="4dp"
-        android:hint="Search"
         android:gravity="center_vertical"
-        android:paddingLeft="26dp"/>
-<!--Nav-Bar-->
+        android:hint="Search"
+        android:paddingLeft="26dp" />
+
     <View
         android:id="@+id/navbar"
         android:layout_width="410dp"
@@ -73,100 +73,123 @@
         />
 
     <!--Home-->
-        <!--Icon-->
+    <!--Icon-->
+    <!--Text-->
     <ImageView
         android:id="@+id/homeicon"
         android:layout_width="39.78dp"
         android:layout_height="37dp"
         android:layout_alignLeft="@id/navbar"
         android:layout_alignTop="@id/navbar"
+        android:layout_marginLeft="49dp"
         android:layout_marginTop="2dp"
-        android:layout_marginLeft="50.46dp"
-        android:background="@drawable/homeicon"
-        />
-        <!--Text-->
+        android:background="@drawable/homeicon" />
+
     <TextView
         android:id="@+id/hometext"
         android:layout_width="25dp"
         android:layout_height="9dp"
         android:layout_alignLeft="@id/navbar"
         android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="57dp"
+        android:layout_marginLeft="56dp"
         android:layout_marginTop="42dp"
         android:gravity="center_horizontal|top"
         android:text="@string/home"
         android:textAppearance="@style/home" />
     <!--Health-Data-->
-        <!--Icon-->
+    <!--Icon-->
+    <!--Text-->
+
     <ImageView
         android:id="@+id/healthicon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/navbar"
         android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="126.15dp"
+        android:layout_marginLeft="141dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/healthicon" />
-        <!--Text-->
+
     <TextView
         android:id="@+id/healthtext"
         android:layout_width="33dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/navbar"
         android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="129.06dp"
+        android:layout_marginLeft="145.06dp"
         android:layout_marginTop="42dp"
         android:gravity="center_horizontal|top"
         android:text="@string/health_data"
         android:textAppearance="@style/home" />
     <!--Prescription-->
-        <!--Icon-->
+    <!--Icon-->
+    <!--Text-->
+
     <ImageView
         android:id="@+id/prescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/navbar"
         android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="208.63dp"
+        android:layout_marginLeft="233dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/prescription" />
-        <!--Text-->
+
     <TextView
         android:id="@+id/prescriptiontext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/navbar"
         android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="204.74dp"
+        android:layout_marginLeft="232.74dp"
         android:layout_marginTop="42dp"
         android:gravity="center_horizontal|top"
         android:text="@string/prescription"
         android:textAppearance="@style/home" />
     <!--Doctor's Advice-->
-        <!--Icon-->
+    <!--Icon-->
     <ImageView
         android:id="@+id/doctorsadvice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/navbar"
         android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="294.99dp"
+        android:layout_marginLeft="323dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/doctorsadvice" />
-        <!--Text-->
+
+    <!--Text-->
     <TextView
         android:id="@+id/doctorsadvicetext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/navbar"
         android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="284.31dp"
+        android:layout_marginLeft="318dp"
         android:layout_marginTop="42dp"
         android:gravity="center_horizontal|top"
-        android:text="@string/prescription"
+        android:text="@string/doctor_s_ad"
         android:textAppearance="@style/home" />
 
-
+    <!--Cards-->
+    <View
+        android:id="@+id/findnurse"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/findnurse" />
+    <View
+        android:id="@+id/call"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/findnurse" />
 
 
 </RelativeLayout>

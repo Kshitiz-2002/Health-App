@@ -13,7 +13,6 @@ Health \nData
 Prescription
 </string>
     <string name="doctor_s_ad">
-    Doctor\u00E2\u0080\u0099s advice
+Doctor&apos;s advice
 </string>
-
 </resources>
