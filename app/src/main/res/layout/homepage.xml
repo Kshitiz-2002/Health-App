@@ -8,6 +8,7 @@
     android:clipToOutline="true"
     android:background="#F2F2F9">
 
+<!--Profile -->
     <View
         android:id="@+id/profile"
         android:layout_width="387dp"
@@ -18,9 +19,9 @@
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="65dp" />
-
+    <!--Profile-Pic-->
     <View
-        android:id="@+id/screenshot_"
+        android:id="@+id/profilePic"
         android:layout_width="68.07dp"
         android:layout_height="72.04dp"
         android:layout_marginLeft="54dp"
@@ -28,33 +29,62 @@
         android:layout_alignStart="@+id/profile"
         android:layout_marginStart="0dp"
         android:background="@drawable/profilepic" />
-
+    <!--Greetings-->
     <TextView
         android:id="@+id/hello_aishw"
         android:layout_width="324.83dp"
         android:layout_height="135.77dp"
-        android:layout_alignStart="@+id/profile"
-        android:layout_alignEnd="@+id/profile"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="150dp"
-        android:layout_marginEnd="29dp"
         android:gravity="top"
         android:lineSpacingExtra="-26sp"
-        android:text="Hello,\n\n\nAishwarya chauhan👋🏻"
+        android:text="@string/hello_aishw"
         android:textAppearance="@style/hello_aishw" />
-
-    <View
-        android:id="@+id/rectangle_1"
+<!--Search Bar-->
+    <TextView
+        android:id="@+id/searchbar"
         android:layout_width="307dp"
         android:layout_height="52dp"
+        android:layout_below="@+id/profile"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
         android:layout_marginLeft="28dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="317dp"
-        android:background="@drawable/rectangle_1"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/searchbar"
         android:elevation="4dp"
+        android:hint="Search"
+        android:gravity="center_vertical"
+        android:paddingLeft="26dp"/>
+<!--Nav-Bar-->
+    <View
+        android:id="@+id/navbar"
+        android:layout_width="360dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
         />
+
+    <!--Home-->
+        <!--Icon-->
+    <View
+        android:id="@+id/screenshot_"
+        android:layout_width="39.78dp"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50.46dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="737dp"
+        android:background="@drawable/homeicon"
+        />
+
 
 
 </RelativeLayout>
