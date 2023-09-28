@@ -68,7 +68,7 @@
             android:textColor="@color/and_here_we_are_to_help_you_by_providing_best_services_color"
             android:textSize="14sp" />
 
-        <Button
+        <View
             android:id="@+id/submitBox"
             android:layout_width="305dp"
             android:layout_height="72dp"

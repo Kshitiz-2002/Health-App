@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Health-App</string>
     <string name="hello_aishw">
-\n\nHello,\n\n\n<b>Aishwarya chauhan</b>👋🏻
+\n\nHello,\n\n\n<b>Aishwarya Singh </b>👋🏻
 </string>
     <string name="home">
 Home
@@ -13,6 +13,12 @@ Health \nData
 Prescription
 </string>
     <string name="doctor_s_ad">
-Doctor&apos;s advice
+Doctor\'s advice
+</string>
+    <string name="find_nurse">
+        <b>Find Nurse</b>
+</string>
+    <string name="locate_nurs">
+Locate nurse
 </string>
 </resources>

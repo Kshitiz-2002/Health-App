@@ -9,5 +9,12 @@
         <item name="android:textSize">7sp</item>
         <item name="android:textColor">#7E7E7E</item>
     </style>
-
+    <style name="find_nurse">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFAFA</item>
+    </style>
+    <style name="locate_nurs">
+        <item name="android:textSize">7sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
 </resources>

@@ -2,6 +2,8 @@
 <!-- Auto layout, variables, and unit scale are not yet supported -->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/android_lar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -43,7 +45,6 @@
         android:text="@string/hello_aishw"
         android:textAppearance="@style/hello_aishw" />
     <!--Search Bar-->
-    <!--Nav-Bar-->
     <TextView
         android:id="@+id/searchbar"
         android:layout_width="307dp"
@@ -62,6 +63,8 @@
         android:hint="Search"
         android:paddingLeft="26dp" />
 
+
+    <!--Nav-Bar-->
     <View
         android:id="@+id/navbar"
         android:layout_width="410dp"
@@ -72,124 +75,237 @@
         android:background="#FFFFFF"
         />
 
-    <!--Home-->
-    <!--Icon-->
-    <!--Text-->
-    <ImageView
-        android:id="@+id/homeicon"
-        android:layout_width="39.78dp"
-        android:layout_height="37dp"
-        android:layout_alignLeft="@id/navbar"
-        android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="49dp"
-        android:layout_marginTop="2dp"
-        android:background="@drawable/homeicon" />
-
-    <TextView
-        android:id="@+id/hometext"
-        android:layout_width="25dp"
-        android:layout_height="9dp"
-        android:layout_alignLeft="@id/navbar"
-        android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="42dp"
-        android:gravity="center_horizontal|top"
-        android:text="@string/home"
-        android:textAppearance="@style/home" />
-    <!--Health-Data-->
-    <!--Icon-->
-    <!--Text-->
-
-    <ImageView
-        android:id="@+id/healthicon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/navbar"
-        android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="141dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/healthicon" />
-
-    <TextView
-        android:id="@+id/healthtext"
-        android:layout_width="33dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/navbar"
-        android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="145.06dp"
-        android:layout_marginTop="42dp"
-        android:gravity="center_horizontal|top"
-        android:text="@string/health_data"
-        android:textAppearance="@style/home" />
-    <!--Prescription-->
-    <!--Icon-->
-    <!--Text-->
-
-    <ImageView
-        android:id="@+id/prescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/navbar"
-        android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="233dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/prescription" />
-
-    <TextView
-        android:id="@+id/prescriptiontext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/navbar"
-        android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="232.74dp"
-        android:layout_marginTop="42dp"
-        android:gravity="center_horizontal|top"
-        android:text="@string/prescription"
-        android:textAppearance="@style/home" />
-    <!--Doctor's Advice-->
-    <!--Icon-->
-    <ImageView
-        android:id="@+id/doctorsadvice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/navbar"
-        android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="323dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/doctorsadvice" />
-
-    <!--Text-->
-    <TextView
-        android:id="@+id/doctorsadvicetext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/navbar"
-        android:layout_alignTop="@id/navbar"
-        android:layout_marginLeft="318dp"
-        android:layout_marginTop="42dp"
-        android:gravity="center_horizontal|top"
-        android:text="@string/doctor_s_ad"
-        android:textAppearance="@style/home" />
-
-    <!--Cards-->
-    <View
-        android:id="@+id/findnurse"
-        android:layout_width="118dp"
-        android:layout_height="118dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navRelative"
+        android:layout_width="410dp"
+        android:layout_height="64dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="47dp"
-        android:layout_marginTop="344dp"
-        android:background="@drawable/findnurse" />
-    <View
-        android:id="@+id/call"
-        android:layout_width="118dp"
-        android:layout_height="118dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="47dp"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/findnurse" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
 
+        <!-- Views and constraints for the ConstraintLayout go here -->
+        <!--Home-->
+        <!--Icon-->
+        <!--Text-->
+        <ImageView
+            android:id="@+id/homeicon"
+            android:layout_width="39.78dp"
+            android:layout_height="37dp"
+            android:layout_alignLeft="@id/navRelative"
+            android:layout_alignTop="@id/navRelative"
+            android:layout_marginLeft="50.46dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/homeicon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hometext"
+            android:layout_width="25dp"
+            android:layout_height="9dp"
+            android:layout_alignLeft="@id/navRelative"
+            android:layout_alignTop="@id/homeicon"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/home"
+            android:textAppearance="@style/home"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeicon" />
+        <!--Health-Data-->
+        <!--Icon-->
+        <!--Text-->
+
+        <ImageView
+            android:id="@+id/healthicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/navRelative"
+            android:layout_alignTop="@id/navRelative"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/healthicon"
+            app:layout_constraintEnd_toStartOf="@+id/prescription"
+            app:layout_constraintStart_toEndOf="@+id/homeicon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Prescription-->
+        <!--Icon-->
+        <!--Text-->
+
+        <!--Doctor's Advice-->
+        <!--Icon-->
+
+        <TextView
+            android:id="@+id/healthtext"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/hometext"
+            android:layout_alignTop="@id/healthicon"
+            android:layout_marginLeft="47.06dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="36.84dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/health_data"
+            android:textAppearance="@style/home"
+            app:layout_constraintEnd_toStartOf="@+id/prescriptiontext"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toEndOf="@+id/hometext"
+            app:layout_constraintTop_toBottomOf="@+id/healthicon" />
+
+        <ImageView
+            android:id="@+id/prescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/navRelative"
+            android:layout_alignRight="@id/doctorsadvice"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="49.49dp"
+            android:background="@drawable/prescription"
+            app:layout_constraintEnd_toStartOf="@+id/doctorsadvice"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/prescriptiontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/navRelative"
+            android:layout_alignRight="@id/doctorsadvicetext"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="48dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/prescription"
+            android:textAppearance="@style/home"
+            app:layout_constraintEnd_toStartOf="@+id/doctorsadvicetext"
+            app:layout_constraintTop_toBottomOf="@+id/prescription" />
+
+        <ImageView
+            android:id="@+id/doctorsadvice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/navRelative"
+            android:layout_alignTop="@id/navRelative"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="32.99dp"
+            android:background="@drawable/doctorsadvice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Text-->
+        <TextView
+            android:id="@+id/doctorsadvicetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/navRelative"
+            android:layout_alignTop="@id/doctorsadvice"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="23.29dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/doctor_s_ad"
+            android:textAppearance="@style/home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doctorsadvice" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="362dp"
+        android:layout_marginTop="305dp">
+
+        <!-- Views and constraints for the ConstraintLayout go here -->
+
+        <!--Cards-->
+
+        <View
+            android:id="@+id/findnurse"
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/findnurse"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/call"
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/findnurse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/callambulan" />
+
+        <View
+            android:id="@+id/callambulan"
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/callambulance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/bookappointment"
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/callambulance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/findnurse" />
+
+        <View
+            android:id="@+id/screenshot_"
+            android:layout_width="39dp"
+            android:layout_height="43dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/finnurse"
+            android:elevation="4dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="40dp"
+            app:layout_constraintStart_toStartOf="@+id/findnurse"
+            app:layout_constraintTop_toTopOf="@+id/findnurse" />
+
+        <TextView
+            android:id="@+id/find_nurse"
+            android:layout_width="96dp"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9.9dp"
+            android:layout_marginLeft="22.97dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-13sp"
+            android:text="@string/find_nurse"
+            android:textAppearance="@style/find_nurse"
+            app:layout_constraintEnd_toEndOf="@+id/findnurse"
+            app:layout_constraintStart_toStartOf="@+id/findnurse"
+            app:layout_constraintTop_toBottomOf="@+id/screenshot_" />
+
+        <TextView
+            android:id="@+id/locate_nurs"
+            android:layout_width="54dp"
+            android:layout_height="9dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal|top"
+            android:layout_marginLeft="32.68dp"
+            android:lineSpacingExtra="-10sp"
+            android:text="@string/locate_nurs"
+            android:textAppearance="@style/locate_nurs"
+            app:layout_constraintStart_toStartOf="@+id/findnurse"
+            app:layout_constraintTop_toBottomOf="@+id/find_nurse" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>

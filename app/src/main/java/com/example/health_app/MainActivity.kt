@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.startuppage)
-        val getStarted = findViewById<Button>(R.id.submitBox)
+        val getStarted = findViewById<View>(R.id.submitBox)
 
         getStarted.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, homepage::class.java)
