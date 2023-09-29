@@ -353,7 +353,7 @@
             app:layout_constraintTop_toTopOf="@+id/call_ambula" />
 
         <View
-            android:id="@+id/screenshot_"
+            android:id="@+id/bookAppointmentIcon"
             android:layout_width="35dp"
             android:layout_height="34dp"
             android:layout_alignParentLeft="true"
@@ -379,7 +379,7 @@
             android:textAppearance="@style/book_an_app"
             app:layout_constraintEnd_toEndOf="@+id/bookappointment"
             app:layout_constraintStart_toStartOf="@+id/bookappointment"
-            app:layout_constraintTop_toBottomOf="@+id/screenshot_" />
+            app:layout_constraintTop_toBottomOf="@+id/bookAppointmentIcon" />
 
         <TextView
             android:id="@+id/nursing_fac"

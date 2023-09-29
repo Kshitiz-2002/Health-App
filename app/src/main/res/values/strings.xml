@@ -39,4 +39,10 @@ Doctor\'s advice
     <string name="detailed_en">
         <b>Entry Visits</b>
 </string>
+    <string name="search_">
+Search
+</string>
+    <string name="an_apple_a_">
+An Apple a day keeps the doctor away
+</string>
 </resources>
