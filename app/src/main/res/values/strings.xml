@@ -19,6 +19,18 @@ Doctor\'s advice
         <b>Find Nurse</b>
 </string>
     <string name="locate_nurs">
-Locate nurse
+        <b>Locate nurse</b>
+</string>
+    <string name="call_ambula">
+        <b>Call Ambulance</b>
+</string>
+    <string name="one_call_aw">
+        <b>One call away</b>
+</string>
+    <string name="book_an_app">
+        <b>Book an Appointment</b>
+</string>
+    <string name="nursing_fac">
+        <b>Nursing Facilities One Step Away</b>
 </string>
 </resources>

@@ -19,8 +19,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="32dp" />
 
     <View
@@ -43,7 +43,8 @@
         android:gravity="top"
         android:lineSpacingExtra="-26sp"
         android:text="@string/hello_aishw"
-        android:textAppearance="@style/hello_aishw" />
+        android:textAppearance="@style/hello_aishw"
+        />
     <!--Search Bar-->
     <TextView
         android:id="@+id/searchbar"
@@ -171,7 +172,7 @@
             android:layout_alignTop="@id/navRelative"
             android:layout_alignRight="@id/doctorsadvicetext"
             android:layout_marginTop="3dp"
-            android:layout_marginEnd="48dp"
+            android:layout_marginEnd="40dp"
             android:gravity="center_horizontal|top"
             android:text="@string/prescription"
             android:textAppearance="@style/home"
@@ -218,13 +219,13 @@
 
         <View
             android:id="@+id/findnurse"
+            android:layout_marginTop="55dp"
             android:layout_width="118dp"
             android:layout_height="118dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="47dp"
-            android:layout_marginTop="55dp"
             android:background="@drawable/findnurse"
+            app:layout_constraintEnd_toStartOf="@+id/callambulan"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -257,40 +258,41 @@
             android:layout_height="118dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="47dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/callambulance"
+            app:layout_constraintEnd_toStartOf="@+id/call"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/findnurse" />
 
         <View
-            android:id="@+id/screenshot_"
+            android:id="@+id/findingnurse"
             android:layout_width="39dp"
             android:layout_height="43dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="21dp"
             android:background="@drawable/finnurse"
             android:elevation="4dp"
-            android:layout_marginTop="21dp"
-            android:layout_marginLeft="40dp"
             app:layout_constraintStart_toStartOf="@+id/findnurse"
             app:layout_constraintTop_toTopOf="@+id/findnurse" />
 
         <TextView
             android:id="@+id/find_nurse"
-            android:layout_width="96dp"
-            android:layout_height="19dp"
+            android:layout_width="83dp"
+            android:layout_height="26dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="9.9dp"
-            android:layout_marginLeft="22.97dp"
+            android:layout_marginLeft="30.97dp"
+            android:layout_marginTop="8.9dp"
+            android:layout_marginRight="22.97dp"
             android:gravity="top"
             android:lineSpacingExtra="-13sp"
             android:text="@string/find_nurse"
             android:textAppearance="@style/find_nurse"
             app:layout_constraintEnd_toEndOf="@+id/findnurse"
             app:layout_constraintStart_toStartOf="@+id/findnurse"
-            app:layout_constraintTop_toBottomOf="@+id/screenshot_" />
+            app:layout_constraintTop_toBottomOf="@+id/findingnurse" />
 
         <TextView
             android:id="@+id/locate_nurs"
@@ -298,14 +300,101 @@
             android:layout_height="9dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:gravity="center_horizontal|top"
             android:layout_marginLeft="32.68dp"
+            android:gravity="center_horizontal|top"
             android:lineSpacingExtra="-10sp"
+            android:layout_marginTop="-9dp"
             android:text="@string/locate_nurs"
             android:textAppearance="@style/locate_nurs"
             app:layout_constraintStart_toStartOf="@+id/findnurse"
             app:layout_constraintTop_toBottomOf="@+id/find_nurse" />
 
+        <View
+            android:id="@+id/callambulance"
+            android:layout_width="37dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/callambulan"
+            android:elevation="4dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="42dp"
+            app:layout_constraintStart_toStartOf="@+id/callambulan"
+            app:layout_constraintTop_toTopOf="@+id/callambulan" />
+
+        <TextView
+            android:id="@+id/call_ambula"
+            android:layout_width="99dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11.49dp"
+            android:layout_marginTop="11.19dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-11sp"
+            android:text="@string/call_ambula"
+            android:textAppearance="@style/call_ambula"
+            app:layout_constraintStart_toStartOf="@+id/callambulan"
+            app:layout_constraintTop_toBottomOf="@+id/callambulance" />
+
+        <TextView
+            android:id="@+id/one_call_aw"
+            android:layout_width="51dp"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="37.59dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-10sp"
+            android:text="@string/one_call_aw"
+            android:textAppearance="@style/one_call_aw"
+            app:layout_constraintStart_toStartOf="@+id/callambulan"
+            app:layout_constraintTop_toTopOf="@+id/call_ambula" />
+
+        <View
+            android:id="@+id/screenshot_"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/appointment"
+            android:layout_marginTop="29dp"
+            android:layout_marginLeft="41dp"
+            android:elevation="4dp"
+            app:layout_constraintStart_toStartOf="@+id/bookappointment"
+            app:layout_constraintTop_toTopOf="@+id/bookappointment" />
+
+
+        <TextView
+            android:id="@+id/book_an_app"
+            android:layout_width="108dp"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9.05dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-9sp"
+            android:text="@string/book_an_app"
+            android:textAppearance="@style/book_an_app"
+            app:layout_constraintEnd_toEndOf="@+id/bookappointment"
+            app:layout_constraintStart_toStartOf="@+id/bookappointment"
+            app:layout_constraintTop_toBottomOf="@+id/screenshot_" />
+
+        <TextView
+            android:id="@+id/nursing_fac"
+            android:layout_width="101dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-9dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-8sp"
+            android:text="@string/nursing_fac"
+            android:textAppearance="@style/nursing_fac"
+            app:layout_constraintEnd_toEndOf="@+id/bookappointment"
+            app:layout_constraintStart_toStartOf="@+id/bookappointment"
+            app:layout_constraintTop_toBottomOf="@+id/book_an_app" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>
