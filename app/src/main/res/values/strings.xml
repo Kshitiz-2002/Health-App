@@ -33,4 +33,10 @@ Doctor\'s advice
     <string name="nursing_fac">
         <b>Nursing Facilities One Step Away</b>
 </string>
+    <string name="nurse_log">
+        <b>Nurse Log</b>
+</string>
+    <string name="detailed_en">
+        <b>Entry Visits</b>
+</string>
 </resources>

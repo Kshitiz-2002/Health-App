@@ -395,6 +395,50 @@
             app:layout_constraintEnd_toEndOf="@+id/bookappointment"
             app:layout_constraintStart_toStartOf="@+id/bookappointment"
             app:layout_constraintTop_toBottomOf="@+id/book_an_app" />
+
+        <View
+            android:id="@+id/nurselog"
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="29dp"
+            android:layout_marginLeft="42dp"
+            android:background="@drawable/nureselog"
+            android:elevation="4dp"
+            app:layout_constraintStart_toStartOf="@+id/call"
+            app:layout_constraintTop_toTopOf="@+id/call" />
+
+        <TextView
+            android:id="@+id/nurse_log"
+            android:layout_width="92dp"
+            android:layout_height="21dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="top"
+            android:lineSpacingExtra="-13sp"
+            android:text="@string/nurse_log"
+            android:layout_marginLeft="21.97dp"
+            android:layout_marginTop="10.97dp"
+            android:textAppearance="@style/nurse_log"
+            app:layout_constraintStart_toStartOf="@+id/call"
+            app:layout_constraintTop_toBottomOf="@+id/nurselog" />
+
+        <TextView
+            android:id="@+id/detailed_en"
+            android:layout_width="76dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-10sp"
+            android:text="@string/detailed_en"
+            android:textAppearance="@style/detailed_en"
+            android:layout_marginLeft="26.11dp"
+            android:layout_marginTop="-4dp"
+            app:layout_constraintStart_toStartOf="@+id/call"
+            app:layout_constraintTop_toBottomOf="@+id/nurse_log" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>
