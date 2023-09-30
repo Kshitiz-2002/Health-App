@@ -45,4 +45,16 @@ Search
     <string name="an_apple_a_">
 An Apple a day keeps the doctor away
 </string>
+    <string name="log_in">
+        <b>LOG IN</b>
+</string>
+    <string name="or">
+        <b>OR</b>
+</string>
+    <string name="don_t_have_">
+<b>Don\'t have an account</b>
+    </string>
+        <string name="sign_in">
+            <b>SIGN IN</b>
+    </string>
 </resources>
