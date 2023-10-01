@@ -10,14 +10,9 @@ class loginoption : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.loginoption)
 
-        val signin = findViewById<View>(R.id.signin)
+        val signin = findViewById<View>(R.id.login)
         signin.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, loginoption::class.java)
-            startActivity(intent)
-        })
-        val login = findViewById<View>(R.id.login)
-        login.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, loginoption::class.java)
+            val intent = Intent(this, login::class.java)
             startActivity(intent)
         })
     }

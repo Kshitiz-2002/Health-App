@@ -67,4 +67,31 @@
         <item name="android:letterSpacing">0.1</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
+    <style name="signintext">
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">#9A9A9A</item>
+    </style>
+    <style name="x">
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">#9A9A9A</item>
+    </style>
+    <style name="patient_s_p">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+    <style name="password">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+    <style name="show_passwo">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+    <style name="submit">
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0.2</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
 </resources>

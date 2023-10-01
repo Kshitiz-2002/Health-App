@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_lar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F9"
+    android:clipToOutline="true"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="130dp"
+        android:layout_height="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="145dp"
+        android:gravity="top"
+        android:text="@string/signintext"
+        android:textAppearance="@style/signintext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line_3"
+        android:layout_width="208dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/lineofseparation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in" />
+
+    <TextView
+        android:id="@+id/patient_s_p"
+        android:layout_width="263dp"
+        android:layout_height="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-83dp"
+        android:gravity="top"
+        android:layout_marginTop="126dp"
+        android:text="@string/patient_s_p"
+        android:textAppearance="@style/patient_s_p"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_3" />
+
+    <EditText
+        android:id="@+id/phnum"
+        android:layout_width="229dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-123dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/phnnum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_s_p" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="102dp"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-243dp"
+        android:layout_marginTop="43dp"
+        android:gravity="top"
+        android:text="@string/password"
+        android:textAppearance="@style/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phnum" />
+
+
+    <EditText
+        android:id="@+id/signpass"
+        android:layout_width="304dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginTop="13dp"
+        android:inputType="textPassword"
+        android:background="@drawable/signpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <View
+        android:id="@+id/checkbox"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="13dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/signpass"
+        app:layout_constraintTop_toBottomOf="@+id/signpass" />
+
+    <TextView
+        android:id="@+id/show_passwo"
+        android:layout_width="105dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:text="@string/show_passwo"
+        android:textAppearance="@style/show_passwo"
+        app:layout_constraintStart_toEndOf="@+id/checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/signpass" />
+
+    <View
+        android:id="@+id/sub"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="87dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:gravity="top"
+        android:text="@string/submit"
+        android:textAppearance="@style/submit"
+        app:layout_constraintEnd_toEndOf="@+id/sub"
+        app:layout_constraintStart_toStartOf="@+id/sub"
+        app:layout_constraintTop_toTopOf="@+id/sub" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,7 +46,7 @@ Search
 An Apple a day keeps the doctor away
 </string>
     <string name="log_in">
-        <b>LOG IN</b>
+        <b>SIGN IN</b>
 </string>
     <string name="or">
         <b>OR</b>
@@ -54,7 +54,25 @@ An Apple a day keeps the doctor away
     <string name="don_t_have_">
 <b>Don\'t have an account</b>
     </string>
-        <string name="sign_in">
-            <b>SIGN IN</b>
+    <string name="sign_in">
+            <b>SIGN UP</b>
     </string>
+    <string name="signintext">
+        <b>SIGN IN</b>
+</string>
+    <string name="x">
+        <b>x</b>
+</string>
+    <string name="patient_s_p">
+        <b>Phone Number</b>
+</string>
+    <string name="password">
+        <b>Password</b>
+</string>
+    <string name="show_passwo">
+        <b>Show password</b>
+</string>
+    <string name="submit">
+<b>SUBMIT</b>
+</string>
 </resources>
