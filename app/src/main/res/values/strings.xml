@@ -75,4 +75,19 @@ An Apple a day keeps the doctor away
     <string name="submit">
 <b>SUBMIT</b>
 </string>
+    <string name="new_here_no">
+        <b>New here, not a problem</b>
+</string>
+    <string name="sign_up">
+        <b>SIGN UP</b>
+</string>
+    <string name="patient_s_n">
+<b>Name</b>
+</string>
+    <string name="patient_s_a">
+        <b>Age</b>
+</string>
+    <string name="in_years">
+        <b>In Years</b>
+</string>
 </resources>

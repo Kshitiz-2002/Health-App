@@ -15,5 +15,10 @@ class loginoption : AppCompatActivity() {
             val intent = Intent(this, login::class.java)
             startActivity(intent)
         })
+        val signup1 = findViewById<View>(R.id.signin)
+        signup1.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, signup::class.java)
+            startActivity(intent)
+        })
     }
 }
