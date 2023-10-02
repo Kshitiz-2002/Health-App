@@ -15,7 +15,7 @@
         android:layout_height="19dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="110dp"
         android:gravity="top"
         android:text="@string/new_here_no"
         android:textAppearance="@style/new_here_no"
@@ -29,7 +29,7 @@
         android:layout_height="36dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="15dp"
         android:gravity="top"
         android:text="@string/sign_up"
         android:textAppearance="@style/sign_up"
@@ -44,7 +44,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="134dp"
+        android:layout_marginTop="212dp"
         android:gravity="top"
         android:text="@string/patient_s_n"
         android:textAppearance="@style/patient_s_n"
@@ -52,12 +52,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/rectangle_1"
+        android:id="@+id/name"
         android:layout_width="304dp"
+        android:paddingLeft="10dp"
         android:layout_height="26dp"
-        android:layout_marginTop="7dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:paddingRight="10dp"
         android:background="@drawable/patname"
         app:layout_constraintStart_toStartOf="@+id/patient_s_n"
         app:layout_constraintTop_toBottomOf="@+id/patient_s_n" />
@@ -68,21 +70,23 @@
         android:layout_height="20dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="16dp"
         android:gravity="top"
         android:text="@string/patient_s_a"
         android:textAppearance="@style/patient_s_a"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle_1" />
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <EditText
         android:id="@+id/age"
         android:layout_width="107dp"
+        android:paddingLeft="10dp"
         android:layout_height="23dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:paddingRight="10dp"
         android:background="@drawable/patage"
-        android:layout_marginTop="7dp"
         app:layout_constraintStart_toStartOf="@+id/patient_s_a"
         app:layout_constraintTop_toBottomOf="@+id/patient_s_a" />
 
@@ -92,7 +96,7 @@
         android:layout_height="18dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="9dp"
         android:layout_marginTop="3dp"
         android:gravity="top"
         android:text="@string/in_years"
@@ -100,6 +104,191 @@
         app:layout_constraintStart_toEndOf="@+id/age"
         app:layout_constraintTop_toTopOf="@+id/age" />
 
+    <TextView
+        android:id="@+id/patient_s_g"
+        android:layout_width="99dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:gravity="top"
+        android:text="@string/patient_s_g"
+        android:textAppearance="@style/patient_s_g"
+        app:layout_constraintStart_toStartOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
 
+    <View
+        android:id="@+id/ellipse_2"
+        android:layout_width="13dp"
+        android:layout_height="11.9dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12.94dp"
+        android:background="#FFFDFD"
+        app:layout_constraintStart_toStartOf="@+id/patient_s_g"
+        app:layout_constraintTop_toBottomOf="@+id/patient_s_g" />
+
+    <TextView
+        android:id="@+id/male"
+        android:layout_width="42dp"
+        android:layout_height="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="-4dp"
+        android:gravity="top"
+        android:text="@string/male"
+        android:textAppearance="@style/male"
+        app:layout_constraintStart_toEndOf="@+id/ellipse_2"
+        app:layout_constraintTop_toTopOf="@+id/ellipse_2" />
+
+    <View
+        android:id="@+id/ellipse_3"
+        android:layout_width="13dp"
+        android:layout_height="11.9dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:background="#FFFCFC"
+        app:layout_constraintStart_toEndOf="@+id/male"
+        app:layout_constraintTop_toTopOf="@+id/ellipse_2" />
+
+    <TextView
+        android:id="@+id/female"
+        android:layout_width="62dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:gravity="top"
+        android:text="@string/female"
+        android:textAppearance="@style/female"
+        app:layout_constraintStart_toEndOf="@+id/ellipse_3"
+        app:layout_constraintTop_toTopOf="@+id/male" />
+
+    <View
+        android:id="@+id/ellipse_4"
+        android:layout_width="13dp"
+        android:layout_height="11.9dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:background="#FFFBFB"
+        app:layout_constraintStart_toEndOf="@+id/female"
+        app:layout_constraintTop_toTopOf="@+id/ellipse_3" />
+
+    <TextView
+        android:id="@+id/transgender"
+        android:layout_width="87dp"
+        android:layout_height="20.55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:gravity="top"
+        android:text="@string/transgender"
+        android:textAppearance="@style/transgender"
+        app:layout_constraintStart_toEndOf="@+id/ellipse_4"
+        app:layout_constraintTop_toTopOf="@+id/female" />
+
+    <TextView
+        android:id="@+id/patientaddhead"
+        android:layout_width="102dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:gravity="top"
+        android:text="@string/patientaddhead"
+        android:textAppearance="@style/patientaddhead"
+        app:layout_constraintStart_toStartOf="@+id/patient_s_g"
+        app:layout_constraintTop_toBottomOf="@+id/patient_s_g" />
+
+    <EditText
+        android:id="@+id/patadd"
+        android:layout_width="241dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:paddingRight="10dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/patadd"
+        app:layout_constraintStart_toStartOf="@+id/patientaddhead"
+        app:layout_constraintTop_toBottomOf="@+id/patientaddhead" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="38dp"
+        android:layout_height="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:gravity="top"
+        android:text="@string/city"
+        android:textAppearance="@style/city"
+        app:layout_constraintStart_toStartOf="@+id/patadd"
+        app:layout_constraintTop_toBottomOf="@+id/patadd" />
+
+    <EditText
+        android:id="@+id/citytext"
+        android:layout_width="115dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/citytext"
+        app:layout_constraintStart_toStartOf="@+id/city"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="41dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="121dp"
+        android:gravity="top"
+        android:text="@string/state"
+        android:textAppearance="@style/state"
+        app:layout_constraintStart_toEndOf="@+id/city"
+        app:layout_constraintTop_toTopOf="@+id/city" />
+
+    <EditText
+        android:id="@+id/statetext"
+        android:layout_width="115dp"
+        android:layout_height="22dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/statetext"
+        app:layout_constraintStart_toStartOf="@+id/state"
+        app:layout_constraintTop_toTopOf="@+id/citytext" />
+
+    <View
+        android:id="@+id/next"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nexttext"
+        android:layout_width="59dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/next"
+        android:textAppearance="@style/next"
+        app:layout_constraintBottom_toBottomOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="@+id/next"
+        app:layout_constraintStart_toStartOf="@+id/next"
+        app:layout_constraintTop_toTopOf="@+id/next" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -90,4 +90,28 @@ An Apple a day keeps the doctor away
     <string name="in_years">
         <b>In Years</b>
 </string>
+        <string name="patient_s_g">
+            <b>Gender</b>
+</string>
+    <string name="male">
+<b>Male</b>
+</string>
+    <string name="female">
+<b>Female</b>
+</string>
+    <string name="transgender">
+        <b>Other</b>
+</string>
+    <string name="patientaddhead">
+ <b>Address</b>
+</string>
+    <string name="city">
+        <b>City</b>
+</string>
+    <string name="state">
+<b>State</b>
+</string>
+    <string name="next">
+        <b>NEXT</b>
+</string>
 </resources>

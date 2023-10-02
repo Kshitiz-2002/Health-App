@@ -1,5 +1,6 @@
 package com.example.health_app
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +9,7 @@ import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
 
 class login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +36,21 @@ class login : AppCompatActivity() {
         signin.setOnClickListener{
             val phoneNum = phnnum.text.toString()
             val passWord = pass.text.toString()
+            //  Authorization
+            var auth = false
+            if(phoneNum == ""){
+                Toast.makeText(applicationContext, "Please Enter Phone Number", Toast.LENGTH_SHORT).show()
+            }
+            else if (passWord == ""){
+                Toast.makeText(applicationContext, "Please Enter Password", Toast.LENGTH_SHORT).show()
+            }
+            else if(auth == false){
+                Toast.makeText(applicationContext, "Invalid Phone Number or Password", Toast.LENGTH_SHORT).show()
+            }
+            else{
+                val intent = Intent(this, homepage::class.java)
+                startActivity(intent)
+            }
         }
 
     }
