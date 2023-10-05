@@ -1,5 +1,6 @@
 package com.example.health_app
 
+import android.app.Activity
 import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +8,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
-
 class signup : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +23,8 @@ class signup : AppCompatActivity() {
         val city = findViewById<EditText>(R.id.citytext)
         val state = findViewById<EditText>(R.id.statetext)
         var gender = "None"
+
+
         male.setOnClickListener{
             gender = "Male"
             female.setBackgroundColor(Color.WHITE)
@@ -68,9 +70,11 @@ class signup : AppCompatActivity() {
             }
             else{
                 //  Registration
+
                 //  Next Activity
-                val intent = Intent(this, homepage::class.java)
+                val intent = Intent(this, signup2::class.java)
                 startActivity(intent)
+
             }
         }
     }

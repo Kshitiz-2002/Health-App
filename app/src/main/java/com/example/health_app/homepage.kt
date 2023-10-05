@@ -17,8 +17,8 @@ class homepage : AppCompatActivity() {
             startActivity(intent)
         })
 
-        val bookAppointment = findViewById<View>(R.id.bookappointment)
-        bookAppointment.setOnClickListener(View.OnClickListener {
+        val bookAppointments = findViewById<View>(R.id.bookappointment)
+        bookAppointments.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, bookAppointment::class.java)
             startActivity(intent)
         })

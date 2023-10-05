@@ -90,7 +90,7 @@ An Apple a day keeps the doctor away
     <string name="in_years">
         <b>In Years</b>
 </string>
-        <string name="patient_s_g">
+    <string name="patient_s_g">
             <b>Gender</b>
 </string>
     <string name="male">
@@ -113,5 +113,15 @@ An Apple a day keeps the doctor away
 </string>
     <string name="next">
         <b>NEXT</b>
+</string>
+    <string name="some_id">
+        <b>+91</b>
+</string>
+
+    <string name="patient_s_e">
+        <b>E-mail Id</b>
+</string>
+    <string name="confirm_pas">
+        <b>Confirm Password</b>
 </string>
 </resources>

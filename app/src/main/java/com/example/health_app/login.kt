@@ -37,7 +37,7 @@ class login : AppCompatActivity() {
             val phoneNum = phnnum.text.toString()
             val passWord = pass.text.toString()
             //  Authorization
-            var auth = false
+            var auth = true
             if(phoneNum == ""){
                 Toast.makeText(applicationContext, "Please Enter Phone Number", Toast.LENGTH_SHORT).show()
             }

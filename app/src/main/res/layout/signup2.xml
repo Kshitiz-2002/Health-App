@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_lar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F9"
+    android:clipToOutline="true"
+    tools:context=".signup2">
+
+    <TextView
+        android:id="@+id/new_here_no"
+        android:layout_width="195dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="86dp"
+        android:gravity="top"
+        android:text="@string/new_here_no"
+        android:textAppearance="@style/new_here_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="144dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:gravity="top"
+        android:text="@string/sign_up"
+        android:textAppearance="@style/sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_here_no" />
+
+    <TextView
+        android:id="@+id/patient_s_p"
+        android:layout_width="160dp"
+        android:layout_height="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/patient_s_p"
+        android:textAppearance="@style/patient_s_p"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phnnumbox"
+        android:layout_width="272dp"
+        android:paddingBottom="3dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/phnnum"
+        android:layout_marginTop="13dp"
+        android:paddingLeft="57dp"
+        app:layout_constraintStart_toStartOf="@+id/patient_s_p"
+        app:layout_constraintTop_toBottomOf="@+id/patient_s_p" />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="43dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/some_id"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="13dp"
+        android:textAppearance="@style/some_id"
+        app:layout_constraintBottom_toBottomOf="@+id/phnnumbox"
+        app:layout_constraintStart_toStartOf="@+id/phnnumbox"
+        app:layout_constraintTop_toTopOf="@+id/phnnumbox"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/patient_s_e"
+        android:layout_width="148dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/patient_s_e"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/patient_s_e"
+        app:layout_constraintStart_toStartOf="@+id/phnnumbox"
+        app:layout_constraintTop_toBottomOf="@+id/phnnumbox" />
+
+    <EditText
+        android:id="@+id/emailidbox"
+        android:layout_width="272dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="13dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/phnnum"
+        app:layout_constraintStart_toStartOf="@+id/patient_s_e"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/patient_s_e" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="90dp"
+        android:layout_height="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/password"
+        android:layout_marginTop="23dp"
+        android:textAppearance="@style/password"
+        app:layout_constraintStart_toStartOf="@+id/emailidbox"
+        app:layout_constraintTop_toBottomOf="@+id/emailidbox" />
+
+    <EditText
+        android:id="@+id/passbox"
+        android:layout_width="239dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="9dp"
+        android:paddingLeft="13dp"
+        android:background="@drawable/passbox"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/confirm_pas"
+        android:layout_width="175dp"
+        android:layout_height="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:layout_marginTop="13dp"
+        android:text="@string/confirm_pas"
+        android:textAppearance="@style/confirm_pas"
+        app:layout_constraintStart_toStartOf="@+id/passbox"
+        app:layout_constraintTop_toBottomOf="@+id/passbox" />
+
+    <EditText
+        android:id="@+id/cpass"
+        android:layout_width="230dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="13dp"
+        android:paddingLeft="13dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/passbox"
+        app:layout_constraintStart_toStartOf="@+id/confirm_pas"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_pas" />
+
+    <View
+        android:id="@+id/submit"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/submittext"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/submit"
+        android:textAppearance="@style/submit"
+        app:layout_constraintBottom_toBottomOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="@+id/submit"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="@+id/submit"
+        app:layout_constraintTop_toTopOf="@+id/submit"
+        app:layout_constraintVertical_bias="0.778" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
