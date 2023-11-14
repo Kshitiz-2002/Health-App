@@ -41,24 +41,26 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="-83dp"
-        android:gravity="top"
         android:layout_marginTop="126dp"
+        android:gravity="top"
         android:text="@string/patient_s_p"
         android:textAppearance="@style/patient_s_p"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/line_3" />
 
+
     <EditText
         android:id="@+id/phnum"
         android:layout_width="229dp"
         android:layout_height="32dp"
         android:layout_alignParentLeft="true"
-        android:paddingLeft="10dp"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="-123dp"
+        android:layout_marginLeft="-110dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/phnnum"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/patient_s_p" />
@@ -84,12 +86,12 @@
         android:layout_width="304dp"
         android:layout_height="32dp"
         android:layout_alignParentLeft="true"
-        android:paddingLeft="10dp"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="-40dp"
+        android:layout_marginLeft="-30dp"
         android:layout_marginTop="13dp"
-        android:inputType="textPassword"
         android:background="@drawable/signpass"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
@@ -100,7 +102,7 @@
         android:layout_height="11dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="4dp"
+        android:layout_marginLeft="6dp"
         android:layout_marginTop="13dp"
         android:background="#FFFFFF"
         app:layout_constraintStart_toStartOf="@+id/signpass"
@@ -129,8 +131,35 @@
         android:layout_marginBottom="70dp"
         android:background="@drawable/submit"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/show_passwo"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="@+id/signpass" />
+
+    <View
+        android:id="@+id/signup"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/sub" />
+
+    <TextView
+        android:id="@+id/newUser"
+        android:layout_width="87dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:gravity="top"
+        android:text="@string/signup"
+        android:textAppearance="@style/submit"
+        app:layout_constraintEnd_toEndOf="@+id/sub"
+        app:layout_constraintStart_toStartOf="@+id/sub"
+        app:layout_constraintTop_toTopOf="@+id/sub" />
 
     <TextView
         android:id="@+id/submit"
@@ -142,9 +171,9 @@
         android:gravity="top"
         android:text="@string/submit"
         android:textAppearance="@style/submit"
-        app:layout_constraintEnd_toEndOf="@+id/sub"
-        app:layout_constraintStart_toStartOf="@+id/sub"
-        app:layout_constraintTop_toTopOf="@+id/sub" />
+        app:layout_constraintEnd_toEndOf="@+id/signup"
+        app:layout_constraintStart_toStartOf="@+id/signup"
+        app:layout_constraintTop_toTopOf="@+id/signup" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

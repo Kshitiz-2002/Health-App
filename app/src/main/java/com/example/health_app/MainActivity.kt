@@ -13,8 +13,9 @@ class MainActivity : AppCompatActivity() {
         val getStarted = findViewById<View>(R.id.submitBox)
 
         getStarted.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, loginoption::class.java)
+            val intent = Intent(this, homepage::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         })
     }
 }

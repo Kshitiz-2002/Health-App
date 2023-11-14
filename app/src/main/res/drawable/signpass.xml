@@ -8,7 +8,7 @@
     >
     <group>
         <clip-path
-            android:pathData="M16 0H288C296.837 0 304 7.16344 304 16C304 24.8366 296.837 32 288 32H16C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0Z"
+            android:pathData="M8 0H296C304.837 0 304 0 304 8V24C304 32 304 32 296 32H8C0 32 0 32 0 24V8C0 0 0 0 8 0Z"
             />
         <path
             android:pathData="M0 0V32H304V0"

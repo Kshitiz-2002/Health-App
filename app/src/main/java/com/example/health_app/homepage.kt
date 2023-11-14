@@ -40,4 +40,7 @@ class homepage : AppCompatActivity() {
 //        })
 
     }
+    override fun onBackPressed() {
+
+    }
 }

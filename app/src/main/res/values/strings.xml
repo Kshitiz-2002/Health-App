@@ -73,7 +73,10 @@ An Apple a day keeps the doctor away
         <b>Show password</b>
 </string>
     <string name="submit">
-<b>SUBMIT</b>
+<b>LOG IN</b>
+</string>
+    <string name="signup">
+<b>SIGNUP</b>
 </string>
     <string name="new_here_no">
         <b>New here, not a problem</b>

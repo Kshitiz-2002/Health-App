@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "700939721541",
-    "project_id": "health-info-6d38e",
-    "storage_bucket": "health-info-6d38e.appspot.com"
+    "project_number": "377292242447",
+    "project_id": "wellnessway-fba9b",
+    "storage_bucket": "wellnessway-fba9b.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:700939721541:android:3e578633d71f037d13fc2c",
+        "mobilesdk_app_id": "1:377292242447:android:7128a480622c5909012d7a",
         "android_client_info": {
           "package_name": "com.example.health_app"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAqZ3GlW6tqUT91mNb9309Ej0liUmBSoy0"
+          "current_key": "AIzaSyAZfyqBX4torJpUdg4pbs_HwcB4NCumZJE"
         }
       ],
       "services": {
